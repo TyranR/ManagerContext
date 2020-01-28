@@ -13,11 +13,11 @@ class TestSecretaryProgram(unittest.TestCase):
 
     def setUp(self):
         self.test_documents = []
-        with open('fixtures/documents.json', 'r', encoding='utf-8') as \
+        with open('../fixtures/documents.json', 'r', encoding='utf-8') as \
                 out_docs:
             self.test_documents.extend(json.load(out_docs))
         self.test_directories = {}
-        with open('fixtures/directories.json', 'r', encoding='utf-8') as \
+        with open('../fixtures/directories.json', 'r', encoding='utf-8') as \
                 out_dirs:
             self.test_directories.update(json.load(out_dirs))
 

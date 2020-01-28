@@ -174,7 +174,7 @@ with Logwork ("log.txt", "w") as file:
     print(f"Время начала работы {start_time}\n")
     main()
     print("Трёхсекундная пауза, чтобы было интереснее")
-    time.sleep(3)
+    # time.sleep(3)
     stop_time = datetime.now()
     file.write(f"Время окончания работы {stop_time}\n")
     print(f"Время окончания работы {stop_time}\n")
