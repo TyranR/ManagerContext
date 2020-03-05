@@ -21,7 +21,7 @@ documents = [
   {"type": "passport", "number": "2207 876234", "name": "Василий Гупкин"},
   {"type": "invoice", "number": "11-2", "name": "Геннадий Покемонов"},
   {"type": "insurance", "number": "10006", "name": "Аристарх Павлов"},
-  {"type": "Exception", "number": "1000345", "name": "Еписков первый"}
+  {"type": "Exception", "number": "1231", "name": "Еписков первый"}
 ]
 
 # Перечень полок, на которых находятся документы хранится в следующем виде:
@@ -168,17 +168,19 @@ def main():
 # Функции должны иметь выразительное название, передающие её действие.
 
 
-with Logwork ("log.txt", "w") as file:
-    start_time = datetime.now()
-    file.write(f"Время начала работы {start_time}\n")
-    print(f"Время начала работы {start_time}\n")
-    main()
-    print("Трёхсекундная пауза, чтобы было интереснее")
-    # time.sleep(3)
-    stop_time = datetime.now()
-    file.write(f"Время окончания работы {stop_time}\n")
-    print(f"Время окончания работы {stop_time}\n")
-    calc_time = stop_time - start_time
-    file.write(f"Общее время работы скрипта {calc_time}\n\n")
-    print(f"Общее время работы скрипта {calc_time}\n\n")
+# with Logwork ("log.txt", "w") as file:
+#     start_time = datetime.now()
+#     file.write(f"Время начала работы {start_time}\n")
+#     print(f"Время начала работы {start_time}\n")
+#     main()
+#     print("Трёхсекундная пауза, чтобы было интереснее")
+#     # time.sleep(3)
+#     stop_time = datetime.now()
+#     file.write(f"Время окончания работы {stop_time}\n")
+#     print(f"Время окончания работы {stop_time}\n")
+#     calc_time = stop_time - start_time
+#     file.write(f"Общее время работы скрипта {calc_time}\n\n")
+#     print(f"Общее время работы скрипта {calc_time}\n\n")
 
+if __name__ == '__main__':
+    main()
